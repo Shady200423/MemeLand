@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeLaind</title>
+    <link rel="stylesheet" href="styletele.css">
+</head>
+<body>
+    <header>
+        <h1>Crea il tuo meme! 🎵</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h3>Personalizza il tuo video meme!</h3>
+            
+            <!-- Selezione della musica -->
+            <label for="music">Scegli la musica:</label>
+            <select id="music">
+                <option value="TG1Clip.mp3">TG1</option> 
+                <option value="AudioGiorgia.MP3">Io sono Giorgia!</option>  
+                <option value="OSSERVARE E' UN REAT0.MP3">OSSERVARE E' UN REATO?!</option>
+                <option value="Volevo Essere Un Duro.MP3">Volevo Essere Un Duro</option>
+                <option value="OneEternityLater.MP3">One Eternity Later</option>
+                <option value="TG2Clip.MP3">TG2</option>
+                <option value="NoGod.MP3">Noo God Please</option>
+                <option value="SignoraILimoni.MP3">SIGNORA I LIMONI</option>
+                <option value="Yagami LightDeath Note Writing Scene.MP3">The God Of New World Audio</option>
+                <option value="Mine Meme.MP3">Zoolander Coal Mine Audio</option>
+                <option value="Oppenheimer.MP3">Oppenheimer</option>
+                <option value="nomusic.mp3">No Music</option>
+            </select>
+            
+            <!-- Selezione del video -->
+            <label for="video">Scegli il video:</label>
+            <select id="video">
+                <option value="TG1Clip.mp4">TG1</option> 
+                <option value="TG2Clip.mp4">TG2</option>  
+                <option value="Osservare.mp4">OSSERVARE E' UN REATO?!</option>  
+                <option value="TheRock.mp4">The Rock</option>
+                <option value="OneEternityLater.mp4">One Eternity Later</option>
+                <option value="Oppenheimer.mp4">Oppenheimer</option>
+                <option value="postaperte.mp4">C'è Posta Per Te</option>
+                <option value="Yagami LightDeath Note Writing.mp4">The God Of New World</option>
+                <option value="MineCoal.mp4">Zoolander Coal Mine</option>
+            </select>
+            
+            <!-- Testo didascalia -->
+            <label for="caption">Scrivi la tua didascalia:</label>
+            <input type="text" id="caption" placeholder="Inserisci il tuo testo...">
+            
+            <button id="generate">Genera</button>
+
+            <!-- Area del video -->
+            <div id="video-container">
+                <video id="videoPlayer" width="400" controls>
+                    <source id="videoSource" src="" type="video/mp4">
+                    <source id="videoSourceWebm" src="" type="video/webm">
+                    <source id="videoSourceOgv" src="" type="video/ogg">
+                    Il tuo browser non supporta i video.
+                </video>
+            </div>
+
+            <!-- Didascalia sopra il video -->
+            <div id="caption-preview"></div>
+
+            <audio id="audioPlayer"></audio>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+    
+    <footer>
+        <p>&copy; 2025 Gruppo 11, Culture Digitali. MemeLaind. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
